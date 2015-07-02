@@ -1,4 +1,4 @@
-﻿Feature: Parallel
+﻿Feature: Parallel 01
 	In order to avoid silly mistakes
 	As a math idiot
 	I want to be told the sum of two numbers
@@ -46,12 +46,12 @@ Scenario: Add two numbers 7
 	When I press add
 	Then the result should be 19 on the screen
 
-@AddValue10BeforeScenario
+@AddValue20BeforeScenario
 Scenario: Add two numbers 8
 	Given I have entered 5 into the calculator
 	And I have entered 8 into the calculator
 	When I press add
-	Then the result should be 23 on the screen
+	Then the result should be 33 on the screen
 
 Scenario: This test should fail
 	Given I have entered 1 into the calculator

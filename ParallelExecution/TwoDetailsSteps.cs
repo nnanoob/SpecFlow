@@ -32,20 +32,22 @@ namespace ParallelExecution
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
+            Thread.Sleep(TimeSpan.FromSeconds(_r.Next(1, 2)));
             _testDetail.Results = _testDetail.Values.Sum();
         }
 
         [Given(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(int p0)
         {
+            Thread.Sleep(TimeSpan.FromSeconds(_r.Next(1, 2)));
             _testDetail.Values.Add(p0);
         }
 
         [Then(@"the result should be (.*) on the screen")]
         public void ThenTheResultShouldBeOnTheScreen(int p0)
         {
+            Thread.Sleep(TimeSpan.FromSeconds(_r.Next(1, 2)));
             Assert.AreEqual(p0, _testDetail.Results);
-            Thread.Sleep(TimeSpan.FromSeconds(_r.Next(5, 10)));
         }
     }
 }
