@@ -1,9 +1,0 @@
-C:\Users\wba\Downloads\SpecFlow-master\SpecFlow-master\Runtime\bin\Debug\TechTalk.SpecFlow.dll
-C:\Users\wba\Downloads\SpecFlow-master\SpecFlow-master\Runtime\bin\Debug\TechTalk.SpecFlow.pdb
-C:\Users\wba\Downloads\SpecFlow-master\SpecFlow-master\Runtime\obj\Debug\TechTalk.SpecFlow.dll
-C:\Users\wba\Downloads\SpecFlow-master\SpecFlow-master\Runtime\obj\Debug\TechTalk.SpecFlow.pdb
-C:\Users\wba\Downloads\SpecFlow-master\SpecFlow-master\Runtime\obj\Debug\TechTalk.SpecFlow.csprojResolveAssemblyReference.cache
-C:\vs2013\sandbox\specflow-parallel\Runtime\bin\Debug\TechTalk.SpecFlow.dll
-C:\vs2013\sandbox\specflow-parallel\Runtime\bin\Debug\TechTalk.SpecFlow.pdb
-C:\vs2013\sandbox\specflow-parallel\Runtime\obj\Debug\TechTalk.SpecFlow.dll
-C:\vs2013\sandbox\specflow-parallel\Runtime\obj\Debug\TechTalk.SpecFlow.pdb

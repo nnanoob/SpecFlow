@@ -1,8 +1,0 @@
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\bin\Release\ParallelExecution.dll.config
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\bin\Release\ParallelExecution.dll
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\bin\Release\ParallelExecution.pdb
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\bin\Release\TechTalk.SpecFlow.dll
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\bin\Release\TechTalk.SpecFlow.pdb
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\obj\Release\ParallelExecution.csprojResolveAssemblyReference.cache
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\obj\Release\ParallelExecution.dll
-C:\vs2013\sandbox\specflow-parallel\ParallelExecution\obj\Release\ParallelExecution.pdb
