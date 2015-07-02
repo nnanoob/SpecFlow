@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSettings
+  id="1ebef460-530b-4161-af7a-e98288db4177"
+  name="Parallel"
+  enableDefaultDataCollectors="false"
+  xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Description><!--_locID_text="Description1"-->These are default test settings for a local test run.</Description>
+  <Deployment enabled="false" />
+    <Execution hostProcessPlatform="MSIL" parallelTestCount="8" />
+</TestSettings>

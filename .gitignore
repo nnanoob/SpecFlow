@@ -1,0 +1,11 @@
+# git ignore file
+_Resharper
+packages
+[Bb]in
+[Oo]bj
+[Cc]sx
+[Rr]cf
+*.user
+*.suo
+*.[Gg]host[Dd]oc.xml
+*.DotSettings
