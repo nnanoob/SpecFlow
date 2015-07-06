@@ -32,6 +32,7 @@ namespace ParallelExecution
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
+            Assert.AreEqual("I press add", ScenarioStepContext.Current.StepInfo.Text);
             Thread.Sleep(TimeSpan.FromSeconds(_r.Next(1, 2)));
             _testDetail.Results = _testDetail.Values.Sum();
         }
@@ -39,6 +40,7 @@ namespace ParallelExecution
         [Given(@"I have entered (.*) into the calculator")]
         public void GivenIHaveEnteredIntoTheCalculator(int p0)
         {
+            Assert.AreEqual(string.Format("I have entered {0} into the calculator", p0), ScenarioStepContext.Current.StepInfo.Text);
             Thread.Sleep(TimeSpan.FromSeconds(_r.Next(1, 2)));
             _testDetail.Values.Add(p0);
         }
@@ -46,6 +48,7 @@ namespace ParallelExecution
         [Then(@"the result should be (.*) on the screen")]
         public void ThenTheResultShouldBeOnTheScreen(int p0)
         {
+            Assert.AreEqual(string.Format("the result should be {0} on the screen", p0), ScenarioStepContext.Current.StepInfo.Text);
             Thread.Sleep(TimeSpan.FromSeconds(_r.Next(1, 2)));
             Assert.AreEqual(p0, _testDetail.Results);
         }
