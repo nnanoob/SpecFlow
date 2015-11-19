@@ -147,13 +147,19 @@ namespace TechTalk.SpecFlow.Bindings.Discovery
         private void ProcessHookAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute hookAttribute, BindingScope scope)
         {
             HookType hookType = GetHookType(hookAttribute);
+            int order = GetHookOrder(hookAttribute);
 
             if (!ValidateHook(bindingSourceMethod, hookAttribute, hookType))
                 return;
 
-            var hookBinding = bindingFactory.CreateHookBinding(bindingSourceMethod.BindingMethod, hookType, scope);
+            var hookBinding = bindingFactory.CreateHookBinding(bindingSourceMethod.BindingMethod, hookType, scope, order);
 
             ProcessHookBinding(hookBinding);
+        }
+
+        private int GetHookOrder(BindingSourceAttribute hookAttribute)
+        {
+            return hookAttribute.TryGetAttributeValue("Order", 10000);
         }
 
         private void ProcessStepArgumentTransformationAttribute(BindingSourceMethod bindingSourceMethod, BindingSourceAttribute stepArgumentTransformationAttribute)

@@ -98,11 +98,19 @@ namespace TechTalk.SpecFlow
     {
         internal HookType Event { get; private set; }
         public string[] Tags { get; private set; }
-
+        /// <summary>
+        /// The order in which the hook will be executed. Lower numbers go first. 
+        /// Orders are only applicable for hooks of the same type. 
+        /// Hooks with the same priority will have non-deterministic execution order. 
+        /// Default value is 10,000.
+        /// </summary>
+        public int Order { get; set; }
+        public const int DefaultOrder = 10000;
         internal HookAttribute(HookType bindingEvent, string[] tags)
         {
             Event = bindingEvent;
             Tags = tags;
+            Order = DefaultOrder;
         }
     }
 
